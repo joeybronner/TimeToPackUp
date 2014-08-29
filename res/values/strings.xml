@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GENERAL -->
+    <string name="app_name">Time to pack up</string>
+    <string name="app_description">Time to pack up permet de gérer efficacement le contenu de sa valise et préparer au mieux son voyage.</string>
+
+    <!-- MAIN -->
+    <string name="title_activity_main">It\u0027s time to pack up.</string>
+    <string name="new_section">+</string>
+    <string name="infos">i</string>
+    <string name="new_item">Ajouter un élément</string>
+
+    <!-- SPLASH SCREEN -->
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+    <!-- ADD GROUP -->
+    <string name="title_activity_add_section">Ajouter une catégorie</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_ok">OK</string>
+
+    <!-- COLOR PICKER -->
+    <string name="hue_view_content_desc">Hue image</string>
+    <string name="hue_cursor_content_desc">Hue image cursor</string>
+    <string name="color_picker_content_desc">Color picker image</string>
+    <string name="arrow_content_desc">Arrow image</string>
+    <string name="title_activity_add_item">AddItem</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_help">Aide</string>
+    
+    <!-- HELP -->
+    <string name="action_cestok">J\u0027ai compris</string>
+    
+
+</resources>

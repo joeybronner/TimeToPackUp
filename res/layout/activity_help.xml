@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.timetopackup.app.Help" >
+
+    <TextView
+        android:id="@+id/tvTitre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Comment ajouter une catégorie ?"
+        android:textStyle="bold" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   	<TextView
+   	    android:id="@+id/tvDescription1"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_below="@+id/tvTitre1"
+   	    android:ems="10"
+   	    android:inputType="textMultiLine"
+   	    android:text="Pour ajouter une catégorie, il suffit de cliquer sur le symbole &apos;+&apos; (voir ci-dessous), qui se trouve en haut à droite de l&apos;écran d&apos;accueil." />
+
+   	<ImageView
+   	    android:id="@+id/img1"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_below="@+id/tvDescription1"
+   	    android:layout_centerHorizontal="true"
+   	    android:background="#666666"
+   	    android:src="@drawable/ic_plus" />
+   	
+   	<!-- NEXT INFORMATION -->
+   	
+   	
+   	<TextView
+        android:id="@+id/tvTitre2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/img1"
+        android:text="Comment supprimer une catégorie ?"
+        android:textStyle="bold" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+   	
+   	<TextView
+   	    android:id="@+id/tvDescription2"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_below="@+id/tvTitre2"
+   	    android:ems="10"
+   	    android:inputType="textMultiLine"
+   	    android:text="Pour supprimer une catégorie, il suffit d'appuyer longuement sur la catégorie à supprimer (un message vous demandera alors si vous êtes sûr de vouloir supprimer)." />
+
+   	<!-- NEXT INFORMATION -->
+   	
+   	
+   	<TextView
+        android:id="@+id/tvTitre3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvDescription2"
+        android:text="Comment ajouter un élément dans une catégorie ?"
+        android:textStyle="bold" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+   	
+   	<TextView
+   	    android:id="@+id/tvDescription3"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_below="@+id/tvTitre3"
+   	    android:ems="10"
+   	    android:inputType="textMultiLine"
+   	    android:text="Pour ajouter un élément à une catégorie, il suffit d'ouvrir la catégorie en cliquant dessus, puis de cliquer sur 'Ajout un élément'." />
+   	
+   	<!-- NEXT INFORMATION -->
+   	
+   	
+   	<TextView
+        android:id="@+id/tvTitre4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvDescription3"
+        android:text="Comment supprimer un élément d'une catégorie ?"
+        android:textStyle="bold" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+   	
+   	<TextView
+   	    android:id="@+id/tvDescription4"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_below="@+id/tvTitre4"
+   	    android:ems="10"
+   	    android:inputType="textMultiLine"
+   	    android:text="Pour supprimer un élément d'une catégorie, il suffit d'appuyer longuement sur l'élément à supprimer. Il disparaîtra alors de la liste des éléments." />
+   	
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="15dp"
+    tools:context="com.timetopackup.app.AddSection"
+    tools:ignore="MergeRootFrame"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    
+    <!-- 
+    ************** SECTION **************
+    -->
+    <TextView
+        android:id="@+id/tvSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Nom de la catégorie"
+        android:textColor="#666666"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSection"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:inputType="textCapSentences" />
+
+    <!-- 
+    ************** COULEUR **************
+    -->
+    <TextView
+        android:id="@+id/tvCouleur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSection"
+        android:layout_marginTop="10dp"
+        android:text="Couleur"
+        android:textColor="#666666"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btCouleur"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCouleur"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:background="#B3B1B1"
+        android:text="Modifier" />
+ 
+    <!-- 
+    ************** LOGO **************
+    -->
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btCouleur"
+        android:layout_marginTop="10dp"
+        android:text="Logo"
+        android:textColor="#666666"
+        android:textSize="20sp">
+    </TextView>
+    
+	<GridView
+	    android:id="@+id/gvLogos"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/tvLogo"
+	    android:layout_marginTop="10dp"
+	    android:background="#B3B1B1"
+	    android:state_checked="true"
+	    android:clickable="true"
+	    android:gravity="center_horizontal"
+	    android:listSelector="@drawable/list_view_selector"
+	    android:numColumns="4"
+	    android:padding="10dp"
+	    android:textAlignment="center" >
+	</GridView>
+<!-- 
+android:listSelector="@drawable/color_list_selected" -->
+</RelativeLayout>
+

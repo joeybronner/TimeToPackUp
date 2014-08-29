@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    tools:context="com.timetopackup.app.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:minHeight="35dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:textSize="14sp" >
+    </TextView>
+    <!-- android:drawableLeft="@drawable/ic_item" -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout> 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CheckedTextView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:minHeight="100dp"
+    android:maxHeight="100dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="32dp"
+    android:paddingRight="10dp"
+    android:textSize="24sp"
+    android:singleLine="true"
+    android:textAlignment="center"
+    android:textColor="#FFFFFF"> 
+</CheckedTextView>
+
+<!-- android:drawableRight="@drawable/ic_launcher"
+     android:paddingTop="8dp"
+     android:layout_marginLeft="8dp" -->
