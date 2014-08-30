@@ -24,6 +24,6 @@
         android:textColor="#FFFFFF"
         android:gravity="center_horizontal"
         android:layout_alignParentBottom="true"
-        android:text="Version 1.0 (1408)" />
+        android:text="Version 1.0.1 (1409)" />
 
 </RelativeLayout>
