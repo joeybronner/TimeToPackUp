@@ -27,7 +27,8 @@ public class AddSection extends ActionBarActivity
 	/* global variables */
 	String 	_nom;
 	int 	_col = 0;
-	String  _hexcol="#FAAC58";
+	String  _hexcol;
+	String  _hexcolsave;
 	String 	_logo;
 	String 	_msgerreur;
 	MySQLiteHelper db = new MySQLiteHelper(this);
@@ -110,6 +111,22 @@ public class AddSection extends ActionBarActivity
 		_logo = "im".concat(_logo);
 	}
 	
+	public int[] getRGB(String rgb)
+	{
+	    int[] ret = new int[3];
+	    for(int i=0; i<3; i++){
+	        ret[i] = hexToInt(rgb.charAt(i*2), rgb.charAt(i*2+1));
+	    }
+	    return ret;
+	}
+
+	public int hexToInt(char a, char b){
+	    int x = a < 65 ? a-48 : a-55;
+	    int y = b < 65 ? b-48 : b-55;
+	    return x*16+y;
+	}
+
+	
 	public boolean validateFields()
 	{
 		/* name of section */ 
@@ -128,6 +145,13 @@ public class AddSection extends ActionBarActivity
         	}
 		}
 		
+		/* test color */
+		if (_hexcol == null || _hexcol.isEmpty() || _hexcol == "")
+		{
+			_msgerreur = "Veuillez sélectionner une couleur de fond.";
+			return false;
+		}
+		
 		/* logo */
 		if (_logo == null || _logo.isEmpty() || _logo == "")
 		{
@@ -137,6 +161,14 @@ public class AddSection extends ActionBarActivity
 		
 		/* that's ok */
 		return true;
+	}
+	
+	public static int getLuminance(int argb)
+	{
+	    int lum= (   77  * ((argb>>16)&255) 
+	               + 150 * ((argb>>8)&255) 
+	               + 29  * ((argb)&255))>>8;
+	    return lum;
 	}
 
 	public void colorPicker()
@@ -155,11 +187,23 @@ public class AddSection extends ActionBarActivity
             	_col = color;
             	_hexcol = String.format("#%06X", (0xFFFFFF & color));
             	
-            	final Button button2 = (Button) findViewById(R.id.btCouleur);
-            	GridView gridView = (GridView) findViewById(R.id.gvLogos);
-            	
-        		button2.setBackgroundColor(_col);
-                gridView.setBackgroundColor(_col);
+            	int lum = getLuminance(_col);
+        		if (lum > 150)
+        		{
+        			_msgerreur = "Cette couleur est trop claire, vous n'y verrez rien.";
+                	_hexcol = _hexcolsave;
+        			Toast.makeText(getBaseContext(), "Erreur: " + _msgerreur, Toast.LENGTH_SHORT).show();
+        			colorPicker();
+        		}
+        		else
+        		{
+        			_hexcolsave = _hexcol;
+                	final Button button2 = (Button) findViewById(R.id.btCouleur);
+                	GridView gridView = (GridView) findViewById(R.id.gvLogos);
+                	
+            		button2.setBackgroundColor(_col);
+                    gridView.setBackgroundColor(_col);
+        		}
             }
         };
 
