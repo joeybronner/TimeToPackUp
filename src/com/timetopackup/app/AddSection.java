@@ -163,7 +163,7 @@ public class AddSection extends ActionBarActivity
 		return true;
 	}
 	
-	public static int getLuminance(int argb)
+	public static int getBrightness(int argb)
 	{
 	    int lum= (   77  * ((argb>>16)&255) 
 	               + 150 * ((argb>>8)&255) 
@@ -187,7 +187,7 @@ public class AddSection extends ActionBarActivity
             	_col = color;
             	_hexcol = String.format("#%06X", (0xFFFFFF & color));
             	
-            	int lum = getLuminance(_col);
+            	int lum = getBrightness(_col);
         		if (lum > 150)
         		{
         			_msgerreur = "Cette couleur est trop claire, vous n'y verrez rien.";
