@@ -7,8 +7,8 @@ So, you can go peace of mind and be sure to ensure that nothing has been forgott
 Version
 ----
 
-1.0 (30/08/2014)
-1.0.1 (03/09/2014)
+1.0 (30/08/2014)  
+1.0.1 (03/09/2014)  
 
 Authors
 ----
@@ -31,10 +31,10 @@ Google Play download link
 Screenshots
 --------------
 
-![alt tag](https://lh4.ggpht.com/i0ZRI-2yzZx0uuxB5rMzg6Lb1j294O0obpcBMJE6nHqoqiJc0vaCaLirr8xh6Al6KHE=h310-rw)  
-![alt tag](https://lh3.ggpht.com/6vsw9jlhHk-DNYYyPfCQuqEIRYqH9vnLde3wc2gshAm3YQYILF29VBBFWcXJ2wrDunw=h900-rw)  
-![alt tag](https://lh4.ggpht.com/kVAmMIpXt8g1mw2dU0Ghs63tPbz-_iVU9-QbWtj2q7xkT3Zw0PdMyp7X98VNn4NjZvc=h900-rw)  
-![alt tag](https://lh3.ggpht.com/79EYmZ9aE3-Fk_NQ0CvMUUrvN2R_fyKDHoo7Xu3G4QaCdTMLSGpnvhObtVlr6-ER3A=h900-rw)  
+![alt tag](https://lh4.ggpht.com/i0ZRI-2yzZx0uuxB5rMzg6Lb1j294O0obpcBMJE6nHqoqiJc0vaCaLirr8xh6Al6KHE=h310-rw) 
+![alt tag](https://lh3.ggpht.com/6vsw9jlhHk-DNYYyPfCQuqEIRYqH9vnLde3wc2gshAm3YQYILF29VBBFWcXJ2wrDunw=h310-rw) 
+![alt tag](https://lh4.ggpht.com/kVAmMIpXt8g1mw2dU0Ghs63tPbz-_iVU9-QbWtj2q7xkT3Zw0PdMyp7X98VNn4NjZvc=h310-rw) 
+![alt tag](https://lh3.ggpht.com/79EYmZ9aE3-Fk_NQ0CvMUUrvN2R_fyKDHoo7Xu3G4QaCdTMLSGpnvhObtVlr6-ER3A=h310-rw)  
 
 
 Others
